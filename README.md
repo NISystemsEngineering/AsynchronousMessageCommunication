@@ -5,3 +5,5 @@ The Asynchronous Message Communication (AMC) Reference Library is a  general pur
 
 The main landing page for AMC is https://decibel.ni.com/content/docs/DOC-10294
 on the reference design portal, ni.com/referencedesigns
+
+The dependencies, ni_lib_keyed_array and ni_lib_string are located here: https://github.com/NISystemsEngineering/LVTools-Palettes
