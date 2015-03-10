@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<nidocument>
+<nifamily familyname="AMC" displayname="Asynchronous Message Communication (AMC)">
+</nifamily>
+<nicomment>
+Error code file for the Asynchronous Message Communication (AMC) reference library. (http://zone.ni.com/devzone/cda/epd/p/id/6091 )
+</nicomment>
+<nierror code="537053">
+Specified message queue does not exist.
+</nierror>
+<nierror code="537050">
+Timeout: AMC Dispatch Server did not respond.
+</nierror>
+<nierror code="537051">
+AMC Dispatcher is already running.
+</nierror>
+<nierror code="537052">
+AMC Dispatcher is not in an executable state.
+</nierror>
+<nierror code="537054">
+Specified message queue is not registered.
+</nierror>
+<nierror code="537055">
+Specified message queue must have a valid name.
+</nierror>
+<nierror code="537056">
+The message name cannot be an empty string.
+</nierror>
+</nidocument>
