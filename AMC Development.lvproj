@@ -1,6 +1,16 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="9008000">
+<Project Type="Project" LVVersion="13008000">
+	<Property Name="SMProvider.SMVersion" Type="Int">201310</Property>
 	<Item Name="My Computer" Type="My Computer">
+		<Property Name="IOScan.Faults" Type="Str"></Property>
+		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
+		<Property Name="IOScan.NetWatchdogEnabled" Type="Bool">false</Property>
+		<Property Name="IOScan.Period" Type="UInt">10000</Property>
+		<Property Name="IOScan.PowerupMode" Type="UInt">0</Property>
+		<Property Name="IOScan.Priority" Type="UInt">9</Property>
+		<Property Name="IOScan.ReportModeConflict" Type="Bool">true</Property>
+		<Property Name="IOScan.StartEngineOnDeploy" Type="Bool">false</Property>
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -34,6 +44,39 @@
 			<Item Name="AMC Send Network Message.vi" Type="VI" URL="../source/vi.lib/NI/AMC/Compatibility/AMC Send Network Message.vi"/>
 			<Item Name="amc_Message Queue.ctl" Type="VI" URL="../source/vi.lib/NI/AMC/Compatibility/amc_Message Queue.ctl"/>
 			<Item Name="amc_Message.ctl" Type="VI" URL="../source/vi.lib/NI/AMC/Compatibility/amc_Message.ctl"/>
+		</Item>
+		<Item Name="examples" Type="Folder">
+			<Item Name="AMC" Type="Folder">
+				<Item Name="Multiple Local Processes" Type="Folder">
+					<Item Name="AMC Local Process 1.vi" Type="VI" URL="../source/examples/AMC/Multiple Local Processes/AMC Local Process 1.vi"/>
+					<Item Name="AMC Local Process 2.vi" Type="VI" URL="../source/examples/AMC/Multiple Local Processes/AMC Local Process 2.vi"/>
+					<Item Name="AMC Multiple Local Processes.lvproj" Type="Document" URL="../source/examples/AMC/Multiple Local Processes/AMC Multiple Local Processes.lvproj"/>
+				</Item>
+				<Item Name="Multiple Targets" Type="Folder">
+					<Item Name="Target1" Type="Folder">
+						<Item Name="AMC Multiple Targets Example 1.vi" Type="VI" URL="../source/examples/AMC/Multiple Targets/Target1/AMC Multiple Targets Example 1.vi"/>
+					</Item>
+					<Item Name="Target2" Type="Folder">
+						<Item Name="AMC Multiple Targets Example 2 (RT).vi" Type="VI" URL="../source/examples/AMC/Multiple Targets/Target2/AMC Multiple Targets Example 2 (RT).vi"/>
+					</Item>
+					<Item Name="AMC Multiple Targets.lvproj" Type="Document" URL="../source/examples/AMC/Multiple Targets/AMC Multiple Targets.lvproj"/>
+				</Item>
+				<Item Name="Simple Clock" Type="Folder">
+					<Item Name="AMC Simple Clock RTM.rtm" Type="Document" URL="../source/examples/AMC/Simple Clock/AMC Simple Clock RTM.rtm"/>
+					<Item Name="AMC Simple Clock Style.ctl" Type="VI" URL="../source/examples/AMC/Simple Clock/AMC Simple Clock Style.ctl"/>
+					<Item Name="AMC Simple Clock.lvproj" Type="Document" URL="../source/examples/AMC/Simple Clock/AMC Simple Clock.lvproj"/>
+					<Item Name="AMC Simple Clock.vi" Type="VI" URL="../source/examples/AMC/Simple Clock/AMC Simple Clock.vi"/>
+					<Item Name="clockconfig.ini" Type="Document" URL="../source/examples/AMC/Simple Clock/clockconfig.ini"/>
+				</Item>
+				<Item Name="Single Local Process" Type="Folder">
+					<Item Name="AMC Local Process.vi" Type="VI" URL="../source/examples/AMC/Single Local Process/AMC Local Process.vi"/>
+				</Item>
+				<Item Name="Three Button Dialog" Type="Folder">
+					<Item Name="AMC Three Button Dialog Launcher.vi" Type="VI" URL="../source/examples/AMC/Three Button Dialog/AMC Three Button Dialog Launcher.vi"/>
+					<Item Name="AMC Three Button Dialog.lvproj" Type="Document" URL="../source/examples/AMC/Three Button Dialog/AMC Three Button Dialog.lvproj"/>
+					<Item Name="AMC Three Button Dialog.vi" Type="VI" URL="../source/examples/AMC/Three Button Dialog/AMC Three Button Dialog.vi"/>
+				</Item>
+			</Item>
 		</Item>
 		<Item Name="AMC.lvlib" Type="Library" URL="../source/vi.lib/NI/AMC/AMC.lvlib"/>
 		<Item Name="AMC Templates.lvlib" Type="Library" URL="../source/vi.lib/NI/AMC/Templates/AMC Templates.lvlib"/>
@@ -71,6 +114,14 @@
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="Tools_KeyedArray.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/Tools/Keyed Array/Tools_KeyedArray.lvlib"/>
 				<Item Name="Tools_String.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/Tools/String/Tools_String.lvlib"/>
+				<Item Name="NI_FTP.lvlib" Type="Library" URL="/&lt;vilib&gt;/FTP/NI_FTP.lvlib"/>
+				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
+				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
+				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
+				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
+				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
